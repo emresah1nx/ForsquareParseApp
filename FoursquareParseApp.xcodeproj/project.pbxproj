@@ -9,22 +9,24 @@
 /* Begin PBXBuildFile section */
 		0F51F9CB2C30311B006BE46A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51F9CA2C30311B006BE46A /* AppDelegate.swift */; };
 		0F51F9CD2C30311B006BE46A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51F9CC2C30311B006BE46A /* SceneDelegate.swift */; };
-		0F51F9CF2C30311B006BE46A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51F9CE2C30311B006BE46A /* ViewController.swift */; };
+		0F51F9CF2C30311B006BE46A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F51F9CE2C30311B006BE46A /* SignUpVC.swift */; };
 		0F51F9D22C30311B006BE46A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0F51F9D12C30311B006BE46A /* Base */; };
 		0F51F9D42C30311C006BE46A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F51F9D32C30311C006BE46A /* Assets.xcassets */; };
 		0F51F9D72C30311C006BE46A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0F51F9D62C30311C006BE46A /* Base */; };
+		0FB3A9642C3195FC00B8A553 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3A9632C3195FC00B8A553 /* PlacesVC.swift */; };
 		D91CD133302606FDE4E92676 /* Pods_FoursquareParseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2E961AFDA8749EC3036A57 /* Pods_FoursquareParseApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F51F9C72C30311B006BE46A /* FoursquareParseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareParseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F51F9C72C30311B006BE46A /* FoursquareParseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = FoursquareParseApp.app; path = "/Users/aaemre/Project/FoursquareParseApp/build/Debug-iphoneos/FoursquareParseApp.app"; sourceTree = "<absolute>"; };
 		0F51F9CA2C30311B006BE46A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F51F9CC2C30311B006BE46A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F51F9CE2C30311B006BE46A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F51F9CE2C30311B006BE46A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		0F51F9D12C30311B006BE46A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F51F9D32C30311C006BE46A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F51F9D62C30311C006BE46A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F51F9D82C30311C006BE46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB3A9632C3195FC00B8A553 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		29CDE779A2F14427D301915D /* Pods-FoursquareParseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareParseApp.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareParseApp/Pods-FoursquareParseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C8223A3AE36F92A64D9A2C7F /* Pods-FoursquareParseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareParseApp.release.xcconfig"; path = "Target Support Files/Pods-FoursquareParseApp/Pods-FoursquareParseApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA2E961AFDA8749EC3036A57 /* Pods_FoursquareParseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareParseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,18 +48,9 @@
 			isa = PBXGroup;
 			children = (
 				0F51F9C92C30311B006BE46A /* FoursquareParseApp */,
-				0F51F9C82C30311B006BE46A /* Products */,
 				BE62801DA6E2B2DF96E26607 /* Pods */,
 				F9BFC894A326BFB183074E2B /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		0F51F9C82C30311B006BE46A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0F51F9C72C30311B006BE46A /* FoursquareParseApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		0F51F9C92C30311B006BE46A /* FoursquareParseApp */ = {
@@ -65,7 +58,8 @@
 			children = (
 				0F51F9CA2C30311B006BE46A /* AppDelegate.swift */,
 				0F51F9CC2C30311B006BE46A /* SceneDelegate.swift */,
-				0F51F9CE2C30311B006BE46A /* ViewController.swift */,
+				0F51F9CE2C30311B006BE46A /* SignUpVC.swift */,
+				0FB3A9632C3195FC00B8A553 /* PlacesVC.swift */,
 				0F51F9D02C30311B006BE46A /* Main.storyboard */,
 				0F51F9D32C30311C006BE46A /* Assets.xcassets */,
 				0F51F9D52C30311C006BE46A /* LaunchScreen.storyboard */,
@@ -137,7 +131,7 @@
 				Base,
 			);
 			mainGroup = 0F51F9BE2C30311B006BE46A;
-			productRefGroup = 0F51F9C82C30311B006BE46A /* Products */;
+			productRefGroup = 0F51F9BE2C30311B006BE46A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -206,8 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F51F9CF2C30311B006BE46A /* ViewController.swift in Sources */,
+				0F51F9CF2C30311B006BE46A /* SignUpVC.swift in Sources */,
 				0F51F9CB2C30311B006BE46A /* AppDelegate.swift in Sources */,
+				0FB3A9642C3195FC00B8A553 /* PlacesVC.swift in Sources */,
 				0F51F9CD2C30311B006BE46A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

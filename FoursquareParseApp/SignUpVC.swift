@@ -1,0 +1,84 @@
+//
+//  ViewController.swift
+//  FoursquareParseApp
+//
+//  Created by Emre Şahin on 29.06.2024.
+//
+
+import UIKit
+import Parse
+
+class SignUpVC: UIViewController {
+
+    @IBOutlet weak var userNameText: UITextField!
+    
+    @IBOutlet weak var passwordText: UITextField!
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+        
+        
+        }
+    
+    @IBAction func signInClıcked(_ sender: Any) {
+        
+        if userNameText.text != "" && passwordText.text != "" {
+            
+            PFUser.logInWithUsername(inBackground: userNameText.text!, password: passwordText.text!) { ( user ,Error) in
+                if Error != nil {
+                    self.makeAlert(titleInput: "Error", messageInput: Error?.localizedDescription ?? "Error")
+                } else {
+                   
+                    self.performSegue(withIdentifier: "toPlacesVC", sender: nil)
+                    
+                }
+                
+            }
+            
+        } else {
+            makeAlert(titleInput: "Error", messageInput: "Username/Password??")
+        }
+    }
+    
+    @IBAction func signUpClicked(_ sender: Any) {
+        
+        if userNameText.text != "" && passwordText.text != "" {
+            
+            let user = PFUser()
+            user.username = userNameText.text!
+            user.password = passwordText.text!
+            
+            user.signUpInBackground {  (Succes , Error) in
+                if Error != nil {
+                    self.makeAlert(titleInput: "Error", messageInput: Error?.localizedDescription ?? "Error")
+                } else {
+                    
+                    //SEGUE
+                    self.performSegue(withIdentifier: "toPlacesVC", sender: nil)
+                    
+                }
+            }
+            
+            
+        } else {
+            makeAlert(titleInput: "Error", messageInput: "Username/Password??")
+        }
+        
+        
+        
+    }
+    
+    func makeAlert(titleInput: String,messageInput:String) {
+        let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+}
+
