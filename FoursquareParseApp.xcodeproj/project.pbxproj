@@ -14,6 +14,10 @@
 		0F51F9D42C30311C006BE46A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F51F9D32C30311C006BE46A /* Assets.xcassets */; };
 		0F51F9D72C30311C006BE46A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0F51F9D62C30311C006BE46A /* Base */; };
 		0FB3A9642C3195FC00B8A553 /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3A9632C3195FC00B8A553 /* PlacesVC.swift */; };
+		0FB3A9662C32DE5E00B8A553 /* AddPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3A9652C32DE5E00B8A553 /* AddPlaceVC.swift */; };
+		0FB3A9682C32E02A00B8A553 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3A9672C32E02A00B8A553 /* MapVC.swift */; };
+		0FB3A96A2C32EB2300B8A553 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3A9692C32EB2300B8A553 /* DetailsVC.swift */; };
+		0FB3A96C2C330C1400B8A553 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3A96B2C330C1400B8A553 /* PlaceModel.swift */; };
 		D91CD133302606FDE4E92676 /* Pods_FoursquareParseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2E961AFDA8749EC3036A57 /* Pods_FoursquareParseApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		0F51F9D62C30311C006BE46A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F51F9D82C30311C006BE46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FB3A9632C3195FC00B8A553 /* PlacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
+		0FB3A9652C32DE5E00B8A553 /* AddPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceVC.swift; sourceTree = "<group>"; };
+		0FB3A9672C32E02A00B8A553 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		0FB3A9692C32EB2300B8A553 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		0FB3A96B2C330C1400B8A553 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		29CDE779A2F14427D301915D /* Pods-FoursquareParseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareParseApp.debug.xcconfig"; path = "Target Support Files/Pods-FoursquareParseApp/Pods-FoursquareParseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C8223A3AE36F92A64D9A2C7F /* Pods-FoursquareParseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareParseApp.release.xcconfig"; path = "Target Support Files/Pods-FoursquareParseApp/Pods-FoursquareParseApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA2E961AFDA8749EC3036A57 /* Pods_FoursquareParseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareParseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,10 +68,14 @@
 				0F51F9CC2C30311B006BE46A /* SceneDelegate.swift */,
 				0F51F9CE2C30311B006BE46A /* SignUpVC.swift */,
 				0FB3A9632C3195FC00B8A553 /* PlacesVC.swift */,
+				0FB3A9652C32DE5E00B8A553 /* AddPlaceVC.swift */,
+				0FB3A9672C32E02A00B8A553 /* MapVC.swift */,
+				0FB3A9692C32EB2300B8A553 /* DetailsVC.swift */,
 				0F51F9D02C30311B006BE46A /* Main.storyboard */,
 				0F51F9D32C30311C006BE46A /* Assets.xcassets */,
 				0F51F9D52C30311C006BE46A /* LaunchScreen.storyboard */,
 				0F51F9D82C30311C006BE46A /* Info.plist */,
+				0FB3A96B2C330C1400B8A553 /* PlaceModel.swift */,
 			);
 			path = FoursquareParseApp;
 			sourceTree = "<group>";
@@ -201,8 +213,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F51F9CF2C30311B006BE46A /* SignUpVC.swift in Sources */,
+				0FB3A96C2C330C1400B8A553 /* PlaceModel.swift in Sources */,
+				0FB3A9682C32E02A00B8A553 /* MapVC.swift in Sources */,
 				0F51F9CB2C30311B006BE46A /* AppDelegate.swift in Sources */,
 				0FB3A9642C3195FC00B8A553 /* PlacesVC.swift in Sources */,
+				0FB3A96A2C32EB2300B8A553 /* DetailsVC.swift in Sources */,
+				0FB3A9662C32DE5E00B8A553 /* AddPlaceVC.swift in Sources */,
 				0F51F9CD2C30311B006BE46A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
